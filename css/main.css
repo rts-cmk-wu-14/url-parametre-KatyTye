@@ -1,0 +1,41 @@
+#content-page {
+  padding: 120px;
+}
+#content-page .hide {
+  display: none;
+}
+#content-page #Apartments h2 {
+  font-size: 48px;
+  padding-bottom: 25px;
+}
+#content-page #Apartments #apartment-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#content-page #Apartments #apartment-list li {
+  width: 288px;
+  height: 360px;
+  overflow: hidden;
+  background: #CEF9FF;
+}
+#content-page #Apartments #apartment-list li img {
+  height: 286px;
+}
+#content-page #Apartments #apartment-list li .nav {
+  height: 72px;
+  display: grid;
+  padding: 23px;
+  grid-template-columns: 1fr 1fr;
+}
+#content-page #Apartments #apartment-list li .nav a {
+  height: 26px;
+  font-size: 14px;
+  padding: 4px 0px 4px 80px;
+}
+#content-page #Apartments #apartment-list li .nav button {
+  padding: 0;
+  width: 26px;
+  height: 26px;
+}
