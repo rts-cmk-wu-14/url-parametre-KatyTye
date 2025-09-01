@@ -6,26 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/resets.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<script src="/scripts/main.js" defer></script>
+	<script src="/scripts/data.js" defer></script>
+	<script src="/scripts/index.js" defer></script>
 	<title>Air BNB | Front Page</title>
 </head>
 
 <body>
 	<div id="top-scroll"></div>
 	<main id="content-page">
-		<section id="Apartments" class="hide">
+		<section id="likes-section">
+			<h2>Liked Apartments</h2>
+			<ul id="liked-list"></ul>
+		</section>
+		<section id="Apartments">
 			<h2>Apartments for rent</h2>
 			<ul id="apartment-list">
-				<li class="item-0">
-					<figure>
-						<img src="/img/greece.jpg" alt="Nothing here yet.">
-						<figcaption class="nav">
-							<button id="favorit-button-0"><img src="/img/icons/black-favorit.svg"
-									alt="Favorit Icon"></button>
-							<a href="?product=0">MORE</a>
-						</figcaption>
-					</figure>
-				</li>
 			</ul>
 		</section>
 	</main>

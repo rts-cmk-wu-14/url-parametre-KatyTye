@@ -8,7 +8,7 @@
 	}
 
 	
-	#Apartments {
+	#Apartments, #likes-section {
 		margin: 0 10vw;
 
 		h2 {
@@ -16,7 +16,8 @@
 			padding-bottom: 25px;
 		}
 
-		#apartment-list {
+		#apartment-list, #liked-list {
+			gap: 20px;
 			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
@@ -41,13 +42,18 @@
 					a {
 						height: 26px;
 						font-size: 14px;
-						padding: 4px 0px 4px 80px;
+						margin: 4px 0px 4px 80px;
 					}
 
 					button {
 						padding: 0;
 						width: 26px;
 						height: 26px;
+
+						img[alt="Favorit Icon"] {
+							width: 20px;
+							height: 20px;
+						}
 					}
 				}
 			}
@@ -83,6 +89,12 @@
 					margin-top: 2%;
 					margin-left: 80%;
 					font-weight: bold;
+
+					img {
+						width: 32px;
+						height: 32px;
+						transform: translateY(30%);
+					}
 				}
 			}
 		}
@@ -102,10 +114,12 @@
 
 			h3 {
 				font-size: 20px;
+				text-transform: uppercase;
 			}
 
 			h2 {
 				font-size: 32px;
+				text-align: center;
 			}
 
 			h4 {
@@ -121,7 +135,7 @@
 
 			#facilities li {
 				width: fit-content;
-				transform: translateX(25%);
+				transform: translateX(15px);
 
 				p {
 					margin: 0;

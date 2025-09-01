@@ -4,43 +4,48 @@
 #content-page .hide {
   display: none;
 }
-#content-page #Apartments {
+#content-page #Apartments, #content-page #likes-section {
   margin: 0 10vw;
 }
-#content-page #Apartments h2 {
+#content-page #Apartments h2, #content-page #likes-section h2 {
   font-size: 48px;
   padding-bottom: 25px;
 }
-#content-page #Apartments #apartment-list {
+#content-page #Apartments #apartment-list, #content-page #Apartments #liked-list, #content-page #likes-section #apartment-list, #content-page #likes-section #liked-list {
+  gap: 20px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#content-page #Apartments #apartment-list li {
+#content-page #Apartments #apartment-list li, #content-page #Apartments #liked-list li, #content-page #likes-section #apartment-list li, #content-page #likes-section #liked-list li {
   width: 288px;
   height: 360px;
   overflow: hidden;
   background: #CEF9FF;
 }
-#content-page #Apartments #apartment-list li img {
+#content-page #Apartments #apartment-list li img, #content-page #Apartments #liked-list li img, #content-page #likes-section #apartment-list li img, #content-page #likes-section #liked-list li img {
   height: 286px;
 }
-#content-page #Apartments #apartment-list li .nav {
+#content-page #Apartments #apartment-list li .nav, #content-page #Apartments #liked-list li .nav, #content-page #likes-section #apartment-list li .nav, #content-page #likes-section #liked-list li .nav {
   height: 72px;
   display: grid;
   padding: 23px;
   grid-template-columns: 1fr 1fr;
 }
-#content-page #Apartments #apartment-list li .nav a {
+#content-page #Apartments #apartment-list li .nav a, #content-page #Apartments #liked-list li .nav a, #content-page #likes-section #apartment-list li .nav a, #content-page #likes-section #liked-list li .nav a {
   height: 26px;
   font-size: 14px;
-  padding: 4px 0px 4px 80px;
+  margin: 4px 0px 4px 80px;
 }
-#content-page #Apartments #apartment-list li .nav button {
+#content-page #Apartments #apartment-list li .nav button, #content-page #Apartments #liked-list li .nav button, #content-page #likes-section #apartment-list li .nav button, #content-page #likes-section #liked-list li .nav button {
   padding: 0;
   width: 26px;
   height: 26px;
+}
+#content-page #Apartments #apartment-list li .nav button img[alt="Favorit Icon"], #content-page #Apartments #liked-list li .nav button img[alt="Favorit Icon"], #content-page #likes-section #apartment-list li .nav button img[alt="Favorit Icon"], #content-page #likes-section #liked-list li .nav button img[alt="Favorit Icon"] {
+  width: 20px;
+  height: 20px;
 }
 #content-page #product {
   width: 100%;
@@ -71,6 +76,11 @@
   margin-left: 80%;
   font-weight: bold;
 }
+#content-page #product .product-image figcaption button img {
+  width: 32px;
+  height: 32px;
+  transform: translateY(30%);
+}
 #content-page #product .product-info {
   display: flex;
   padding: 80px;
@@ -86,9 +96,11 @@
 }
 #content-page #product .product-info h3 {
   font-size: 20px;
+  text-transform: uppercase;
 }
 #content-page #product .product-info h2 {
   font-size: 32px;
+  text-align: center;
 }
 #content-page #product .product-info h4 {
   font-size: 20px;
@@ -102,7 +114,7 @@
 #content-page #product .product-info #facilities li {
   width: -moz-fit-content;
   width: fit-content;
-  transform: translateX(25%);
+  transform: translateX(15px);
 }
 #content-page #product .product-info #facilities li p {
   margin: 0;
