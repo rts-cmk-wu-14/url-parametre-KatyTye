@@ -2,21 +2,12 @@ const param = new URLSearchParams(window.location.search)
 const favButton = document.querySelector("#product-favorit")
 const productSearch = Number(param.get("product"))
 let currentPath = null
-let maxAmount
-
-function loadMaxProducts() {
-	fetch("/data/destinations.json")
-		.then((repsonse) => repsonse.json())
-		.then((data) => {
-			maxAmount = data.destinations.length
-		})
-}
-
-loadMaxProducts()
 
 if (!productSearch || productSearch <= 0 || productSearch > 8) {
 	window.location.search = "?product=1"
 }
+
+document.querySelector("#top-scroll").insertAdjacentHTML("beforeend", "<a href='index.html'>BACK</a>")
 
 fetch(`/data/${productSearch}.json`)
 	.then((repsonse) => repsonse.json())
@@ -24,6 +15,7 @@ fetch(`/data/${productSearch}.json`)
 		document.querySelector("#info-city").innerHTML = data.destination
 		document.querySelector("#info-title").innerHTML = data.title
 		document.querySelector("#info-text").innerHTML = data.text
+		document.querySelector("#image").src = `/img/${data.image}`
 
 		data.facilities.forEach((elm) => {
 			document.querySelector("#facilities").insertAdjacentHTML("beforeend", `<li><p>${elm}</p></li>`)
