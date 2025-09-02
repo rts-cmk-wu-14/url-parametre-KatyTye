@@ -40,4 +40,4 @@ loadProducts()
 
 setTimeout(() => {
 	loadFavorits()
-}, 200)
+}, 400)

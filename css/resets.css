@@ -30,3 +30,11 @@ button {
   cursor: pointer;
   background: transparent;
 }
+
+/* RESIZING */
+@media screen and (min-width: 1500px) {
+  #apartment-list, #liked-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
